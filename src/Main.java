@@ -1,17 +1,25 @@
 public class Main {
     public static void main(String[] args) {
         //задача 4.1
-        int[ ] weights = new int [3];
+
+        int[] weights = new int[3];
         weights[0] = 1;
         weights[1] = 2;
         weights[2] = 3;
 
-        for (int i = 3-1; i >=0; i--){
-            if(weights[i]%2!=0){
-                weights [i] = weights [i] + 1;}
-            System.out.println(weights[i]);}
-        System.out.println("\n");
+        for (int i = 3 - 1; i >= 0; i--) {
+            if (weights[i] % 2 != 0) {
+                weights[i] = weights[i] + 1;
+            }
+            if (i == 0) {
+                System.out.println(weights[i]);
+                // Это последний член массива
+            } else {
+                System.out.print(weights[i] + " , ");
 
+
+            }
+        }
 
         // задача 3.2
         double [ ] a = {1.57, 7.654, 9.986, 0, 0, 0, 0, 0, 0, 0, 0, 0,};
